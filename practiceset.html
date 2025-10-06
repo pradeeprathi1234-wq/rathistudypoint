@@ -2,6 +2,642 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <title>100 GK Online Practice Test</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        } 
+        h1 { 
+            text-align: center; 
+            color: #007bff; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 10px; 
+        } 
+        h2 { 
+            color: #555; 
+            margin-top: 30px; 
+            border-left: 5px solid #ffc107; 
+            padding-left: 10px; 
+        } 
+        .question-set { 
+            background-color: #fff; 
+            padding: 20px; 
+            margin-bottom: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        } 
+        .question { 
+            margin-bottom: 15px; 
+            padding: 10px; 
+            border-bottom: 1px dashed #ccc; 
+        } 
+        .q-text { 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+            color: #333; 
+        } 
+        .options label { 
+            display: block; 
+            margin-left: 20px; 
+            cursor: pointer; 
+        } 
+        .answer { 
+            margin-top: 10px; 
+            padding: 10px; 
+            background-color: #e9ecef; 
+            border: 1px solid #ced4da; 
+            border-radius: 4px; 
+            display: none; /* Hidden by default */ 
+            color: #28a745; 
+            font-weight: bold; 
+        } 
+        .show-answer-btn { 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 5px 10px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 14px; 
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border-radius: 4px; 
+        } 
+    </style> 
+    <script> 
+        function toggleAnswer(button) { 
+            var answerDiv = button.nextElementSibling; 
+            if (answerDiv.style.display === "none") { 
+                answerDiv.style.display = "block"; 
+                button.textContent = "Hide Answer"; 
+            } else { 
+                answerDiv.style.display = "none"; 
+                button.textContent = "Show Answer"; 
+            } 
+        } 
+    </script> 
+</head> 
+<body> 
+ 
+    <h1>General Knowledge (GK) Practice Test (100 Questions)</h1> 
+    <p style="text-align: center;">Test your knowledge across History, 
+Geography, Science, and World Affairs.</p> 
+ 
+    <div class="question-set"> 
+        <h2>Section 1: History & Culture (Q1 - Q25)</h2> 
+ 
+        <div class="question"> 
+            <div class="q-text">1. Who invented the theory of 
+relativity?</div> 
+            <div class="options"> 
+                <label><input type="radio" name="q1" value="A"> Isaac 
+Newton</label> 
+                <label><input type="radio" name="q1" value="B"> 
+Galileo Galilei</label> 
+                <label><input type="radio" name="q1" value="C"> Albert 
+Einstein</label> 
+                <label><input type="radio" name="q1" value="D"> 
+Stephen Hawking</label> 
+            </div> 
+            <button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button> 
+            <div class="answer">Correct Answer: C (Albert 
+Einstein)</div> 
+        </div> 
+        <div class="question"> 
+            <div class="q-text">2. Which historical event is known as 
+the 'Great Fire of London'?</div> 
+            <div class="options"> 
+                <label><input type="radio" name="q2" value="A"> 
+1066</label> 
+                <label><input type="radio" name="q2" value="B"> 
+1666</label> 
+                <label><input type="radio" name="q2" value="C"> 
+1866</label> 
+                <label><input type="radio" name="q2" value="D"> 
+1940</label> 
+            </div> 
+            <button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button> 
+            <div class="answer">Correct Answer: B (1666)</div> 
+        </div> 
+        <div class="question"> 
+            <div class="q-text">3. The Renaissance movement began in 
+which country?</div> 
+            <div class="options"> 
+                <label><input type="radio" name="q3" value="A"> 
+France</label> 
+                <label><input type="radio" name="q3" value="B"> 
+England</label> 
+                <label><input type="radio" name="q3" value="C"> 
+Italy</label> 
+                <label><input type="radio" name="q3" value="D"> 
+Germany</label> 
+            </div> 
+            <button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button> 
+            <div class="answer">Correct Answer: C (Italy)</div> 
+        </div> 
+        <div class="question"> 
+            <div class="q-text">4. Who was the first female Prime 
+Minister of the United Kingdom?</div> 
+            <div class="options"> 
+                <label><input type="radio" name="q4" value="A"> 
+Theresa May</label> 
+                <label><input type="radio" name="q4" value="B"> 
+Margaret Thatcher</label> 
+                <label><input type="radio" name="q4" value="C"> Angela 
+Merkel</label> 
+                <label><input type="radio" name="q4" value="D"> Indira 
+Gandhi</label> 
+            </div> 
+            <button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button> 
+            <div class="answer">Correct Answer: B (Margaret 
+Thatcher)</div> 
+        </div> 
+        <div class="question"><div class="q-text">5. The Great Wall of 
+China was primarily built to protect against which group?</div> 
+            <div class="options"> 
+                <label><input type="radio" name="q5" value="A"> 
+Japanese invaders</label> 
+                <label><input type="radio" name="q5" value="B"> 
+Mongols</label> 
+                <label><input type="radio" name="q5" value="C"> 
+European armies</label> 
+                <label><input type="radio" name="q5" value="D"> 
+Huns</label> 
+            </div> 
+            <button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button> 
+            <div class="answer">Correct Answer: B (Mongols)</div> 
+        </div> 
+        <div class="question"><div class="q-text">6. Which year did 
+the First World War begin?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: 1914</div></div> 
+        <div class="question"><div class="q-text">7. Who painted the 
+Mona Lisa?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Leonardo da Vinci</div></div> 
+        <div class="question"><div class="q-text">8. What is the 
+ancient wonder, the Colossus, known for?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: A giant statue of 
+the sun god Helios</div></div> 
+        <div class="question"><div class="q-text">9. Which 
+civilization built the city of Machu Picchu?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Inca</div></div> 
+        <div class="question"><div class="q-text">10. The Battle of 
+Waterloo in 1815 marked the final defeat of which military 
+leader?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Napoleon Bonaparte</div></div> 
+        <div class="question"><div class="q-text">11. Who wrote the 
+play 'Romeo and Juliet'?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: William Shakespeare</div></div> 
+        <div class="question"><div class="q-text">12. What was the 
+capital of the Aztec Empire?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Tenochtitlan</div></div> 
+        <div class="question"><div class="q-text">13. The Magna Carta 
+was signed in which year?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: 1215</div></div> 
+        <div class="question"><div class="q-text">14. What is the 
+famous phrase associated with Julius Caesar's crossing of the 
+Rubicon?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: "Alea iacta est" (The die is 
+cast)</div></div> 
+        <div class="question"><div class="q-text">15. The 'Silk Road' 
+connected which two major regions?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: China and the 
+Mediterranean/Europe</div></div> 
+        <div class="question"><div class="q-text">16. What material 
+were the earliest coins made of?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Electrum (a natural alloy of gold and 
+silver)</div></div> 
+        <div class="question"><div class="q-text">17. In which year 
+did the Berlin Wall fall?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: 1989</div></div> 
+        <div class="question"><div class="q-text">18. Who was the 
+leader of the Soviet Union during the Cuban Missile 
+Crisis?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Nikita Khrushchev</div></div> 
+        <div class="question"><div class="q-text">19. Which famous 
+ship sank in 1912 after hitting an iceberg?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Titanic</div></div> 
+        <div class="question"><div class="q-text">20. What is the name 
+of the oldest university in the world still operating?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: University of 
+Bologna or Al-Qarawiyyin University</div></div> 
+        <div class="question"><div class="q-text">21. The period of 
+the "Enlightenment" is also known as the "Age of ______"?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Reason</div></div> 
+        <div class="question"><div class="q-text">22. Who was the 
+Greek goddess of wisdom and warfare?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Athena</div></div> 
+        <div class="question"><div class="q-text">23. The invention of 
+the printing press is credited to whom?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Johannes 
+Gutenberg</div></div> 
+        <div class="question"><div class="q-text">24. What was the 
+main trade item that fueled the conflict in the Opium 
+Wars?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Opium</div></div> 
+        <div class="question"><div class="q-text">25. Which famous 
+Roman Emperor was assassinated on the Ides of March?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Julius 
+Caesar</div></div> 
+    </div> 
+ 
+    <div class="question-set"> 
+        <h2>Section 2: Geography & Environment (Q26 - Q50)</h2> 
+ 
+        <div class="question"><div class="q-text">26. What is the 
+largest desert in the world?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Antarctica (non-polar: 
+Sahara)</div></div> 
+        <div class="question"><div class="q-text">27. Which is the 
+longest river in the world?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Amazon River</div></div> 
+        <div class="question"><div class="q-text">28. The 'Ring of 
+Fire' is a major area in the basin of which ocean?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Pacific 
+Ocean</div></div> 
+        <div class="question"><div class="q-text">29. What is the 
+capital city of Canada?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Ottawa</div></div> 
+        <div class="question"><div class="q-text">30. Mount Everest is 
+located in which mountain range?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: The Himalayas</div></div> 
+        <div class="question"><div class="q-text">31. What is the name 
+of the narrow strait that separates Europe from Africa?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Strait of 
+Gibraltar</div></div> 
+        <div class="question"><div class="q-text">32. Which country is 
+geographically the largest in the world?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Russia</div></div> 
+        <div class="question"><div class="q-text">33. What is the 
+official language of Brazil?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Portuguese</div></div> 
+        <div class="question"><div class="q-text">34. The Great 
+Barrier Reef is off the coast of which country?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: 
+Australia</div></div> 
+        <div class="question"><div class="q-text">35. Which continent 
+is the least populated?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Antarctica</div></div> 
+        <div class="question"><div class="q-text">36. What is the 
+chemical formula for Ozone?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: $O_3$</div></div> 
+        <div class="question"><div class="q-text">37. Which major 
+desert covers parts of Botswana, Namibia, and South 
+Africa?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Kalahari Desert</div></div> 
+        <div class="question"><div class="q-text">38. What is the 
+lowest point on Earth's surface, located in the Pacific 
+Ocean?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Mariana Trench (Challenger 
+Deep)</div></div> 
+        <div class="question"><div class="q-text">39. The 
+international date line largely follows which meridian?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: $180^\circ$ 
+meridian</div></div> 
+        <div class="question"><div class="q-text">40. What percentage 
+of Earth's surface is covered by water?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Approximately 
+$71\%$</div></div> 
+        <div class="question"><div class="q-text">41. The currency of 
+Japan is called what?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Yen</div></div> 
+        <div class="question"><div class="q-text">42. What is the 
+highest waterfall in the world?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Angel Falls</div></div> 
+        <div class="question"><div class="q-text">43. What is the 
+study of earthquakes called?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Seismology</div></div> 
+        <div class="question"><div class="q-text">44. Which celestial 
+body is sometimes called Earth's "sister planet"?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Venus</div></div> 
+        <div class="question"><div class="q-text">45. What is the 
+largest lake in Africa by surface area?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Lake 
+Victoria</div></div> 
+        <div class="question"><div class="q-text">46. The Suez Canal 
+connects the Mediterranean Sea with which other sea?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Red Sea</div></div> 
+        <div class="question"><div class="q-text">47. What is the term 
+for a wind that changes direction with the seasons?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Monsoon</div></div> 
+        <div class="question"><div class="q-text">48. Which country is 
+separated from India by the Palk Strait?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Sri 
+Lanka</div></div> 
+        <div class="question"><div class="q-text">49. What is the 
+official name of the disease commonly known as COVID-19?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Coronavirus disease 
+2019</div></div> 
+        <div class="question"><div class="q-text">50. What geological 
+process is responsible for the formation of mountains like the Alps 
+and Himalayas?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Plate Tectonics (Continental 
+Collision)</div></div> 
+    </div> 
+ 
+    <div class="question-set"> 
+        <h2>Section 3: Science & Technology (Q51 - Q75)</h2> 
+ 
+        <div class="question"><div class="q-text">51. What is the most 
+abundant gas in Earth's atmosphere?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: 
+Nitrogen</div></div> 
+        <div class="question"><div class="q-text">52. What type of 
+energy is stored in a compressed spring?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Potential Energy 
+(Elastic)</div></div> 
+        <div class="question"><div class="q-text">53. What is the 
+normal human body temperature in Celsius?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: 
+$37^\circ$C</div></div> 
+        <div class="question"><div class="q-text">54. Which planet is 
+known as the "Red Planet"?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Mars</div></div> 
+        <div class="question"><div class="q-text">55. What is the 
+chemical symbol for gold?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Au</div></div> 
+        <div class="question"><div class="q-text">56. What are the 
+basic building blocks of proteins?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Amino 
+Acids</div></div> 
+        <div class="question"><div class="q-text">57. Who developed 
+the first successful Polio vaccine?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Jonas 
+Salk</div></div> 
+        <div class="question"><div class="q-text">58. What is the 
+process by which plants make their own food?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: 
+Photosynthesis</div></div> 
+        <div class="question"><div class="q-text">59. What is the 
+study of fungi called?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Mycology</div></div> 
+        <div class="question"><div class="q-text">60. What force keeps 
+the Moon in orbit around the Earth?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Gravity</div></div> 
+        <div class="question"><div class="q-text">61. What is the 
+maximum number of electrons that can be held in the first electron 
+shell?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: 2</div></div> 
+        <div class="question"><div class="q-text">62. Which instrument 
+is used to measure electric current?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Ammeter</div></div> 
+        <div class="question"><div class="q-text">63. What is the 
+smallest unit of an element that retains its chemical 
+properties?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Atom</div></div> 
+        <div class="question"><div class="q-text">64. Who is widely 
+considered the father of computer science?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Alan 
+Turing</div></div> 
+        <div class="question"><div class="q-text">65. What does the 
+acronym **HTML** stand for?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: HyperText Markup Language</div></div> 
+        <div class="question"><div class="q-text">66. What is the 
+function of the **CPU** in a computer?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Executes 
+instructions (Central Processing Unit)</div></div> 
+        <div class="question"><div class="q-text">67. What is the full 
+form of **URL**?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Uniform Resource Locator</div></div> 
+        <div class="question"><div class="q-text">68. Which Nobel 
+Laureate developed the concept of the World Wide Web?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Tim Berners-Lee 
+(Not a Nobel Laureate)</div></div> 
+        <div class="question"><div class="q-text">69. What is the unit 
+of power?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Watt</div></div> 
+        <div class="question"><div class="q-text">70. The periodic 
+table is organized by the number of what particle?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Protons (Atomic 
+Number)</div></div> 
+        <div class="question"><div class="q-text">71. What is the 
+primary purpose of a telescope?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: To gather light</div></div> 
+        <div class="question"><div class="q-text">72. What is the 
+chemical element with the symbol Fe?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Iron</div></div> 
+        <div class="question"><div class="q-text">73. The phenomenon 
+of light bending as it passes from one medium to another is called 
+what?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Refraction</div></div> 
+        <div class="question"><div class="q-text">74. What is a byte 
+composed of?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: 8 bits</div></div> 
+        <div class="question"><div class="q-text">75. The first 
+successful space flight carrying a human was achieved by which 
+nation?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Soviet Union</div></div> 
+    </div> 
+ 
+    <div class="question-set"> 
+        <h2>Section 4: World Affairs, Sports & Miscellaneous (Q76 - 
+Q100)</h2> 
+ 
+        <div class="question"><div class="q-text">76. The headquarters 
+of the **United Nations (UN)** is located in which city?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: New York 
+City</div></div> 
+        <div class="question"><div class="q-text">77. The **Nobel 
+Peace Prize** is awarded in which country?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Norway 
+(Oslo)</div></div> 
+        <div class="question"><div class="q-text">78. What is the full 
+form of **NATO**?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: North Atlantic Treaty 
+Organization</div></div> 
+        <div class="question"><div class="q-text">79. Which city 
+hosted the first modern **Olympic Games** in 1896?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Athens, 
+Greece</div></div> 
+        <div class="question"><div class="q-text">80. The game of 
+**Wimbledon** is associated with which sport?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Tennis</div></div> 
+        <div class="question"><div class="q-text">81. How often are 
+the summer Olympic Games held?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Every four years</div></div> 
+        <div class="question"><div class="q-text">82. The World Health 
+Organization (**WHO**) headquarters is in which country?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Switzerland 
+(Geneva)</div></div> 
+        <div class="question"><div class="q-text">83. Which 
+international body manages global trade rules?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: World Trade 
+Organization (WTO)</div></div> 
+        <div class="question"><div class="q-text">84. What color is 
+the black box on an airplane?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Orange (or bright red)</div></div> 
+        <div class="question"><div class="q-text">85. The term 
+'checkmate' is used in which board game?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Chess</div></div> 
+        <div class="question"><div class="q-text">86. The famous 
+painting **'The Persistence of Memory'** was created by 
+whom?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Salvador Dalí</div></div> 
+        <div class="question"><div class="q-text">87. What is the 
+official mascot of the Android operating system?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: A green 
+robot</div></div> 
+        <div class="question"><div class="q-text">88. What is the 
+currency of South Korea?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Won</div></div> 
+        <div class="question"><div class="q-text">89. What is the 
+deepest known point in the Earth's oceans?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Challenger Deep 
+(Mariana Trench)</div></div> 
+        <div class="question"><div class="q-text">90. Who holds the 
+record for the most Olympic gold medals won by an individual 
+athlete?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Michael Phelps</div></div> 
+        <div class="question"><div class="q-text">91. The Gobi Desert 
+is primarily located in which two countries?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Mongolia and 
+China</div></div> 
+        <div class="question"><div class="q-text">92. What 
+international organization is responsible for cooperation on nuclear 
+energy?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: IAEA (International Atomic Energy 
+Agency)</div></div> 
+        <div class="question"><div class="q-text">93. What is the term 
+for the longest home run in baseball?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Grand Slam (often 
+mistakenly thought, but 'tape measure home run' or longest distance is 
+more accurate)</div></div> 
+        <div class="question"><div class="q-text">94. The currency 
+symbol $ is primarily associated with which country?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: United States 
+(USD)</div></div> 
+        <div class="question"><div class="q-text">95. What does the 
+acronym **BRICS** stand for?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Brazil, Russia, India, China, and South 
+Africa</div></div> 
+        <div class="question"><div class="q-text">96. What is the main 
+characteristic of a 'public domain' work?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: No exclusive 
+intellectual property rights apply (free for use)</div></div> 
+        <div class="question"><div class="q-text">97. Who wrote the 
+novel 'Pride and Prejudice'?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Jane Austen</div></div> 
+<div class="question"><div class="q-text">98. The FIFA World 
+Cup is held every how many years?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Four years</div></div> 
+<div class="question"><div class="q-text">99. Which sea is 
+located between Europe and North Africa?</div><button 
+class="show-answer-btn" onclick="toggleAnswer(this)">Show 
+Answer</button><div class="answer">Correct Answer: Mediterranean 
+Sea</div></div> 
+<div class="question"><div class="q-text">100. Who was the 
+first person to step on the Moon?</div><button class="show-answer-btn" 
+onclick="toggleAnswer(this)">Show Answer</button><div 
+class="answer">Correct Answer: Neil Armstrong</div></div> 
+</div> 
+</body> 
+</html><!--<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
     <title>Practice Set</title> 
     <link rel="stylesheet" href="styles.css">  
 </head> 
@@ -86,4 +722,5 @@ image" class="main-content-image">
         </nav> 
     </footer> 
     </body>
-</html>
+
+</html>-->
