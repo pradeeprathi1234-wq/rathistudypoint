@@ -6,7 +6,7 @@ body {
     color: #333; 
      
     /* BACKGROUND IMAGE STYLING */ 
-    background-image: url('../Rathi/image/background.jpg'); 
+    background-image: url('image/background.jpg'); 
     background-size: cover; /* Cover the entire viewport */ 
     background-attachment: fixed; /* Fixed background */ 
     background-position: center; 
@@ -131,3 +131,4 @@ footer nav a:hover {
 }
 .home{height: 100%;width: 100%px;background-color: blueviolet;
 text-align: center;border: 2px solid black;}
+
